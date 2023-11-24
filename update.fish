@@ -1,7 +1,7 @@
 function update
 set commands 'sudo dnf upgrade' 'flatpak update' 'updatevim' 'fisher update' 'asdf update' 
 set n (count $commands)
-set len 50
+set len $COLUMNS
 set error 0
 
 for i in (seq 1 $n)
